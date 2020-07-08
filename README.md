@@ -140,3 +140,74 @@ public class TestController extends HttpServlet {
 10. doGet Method call the view page .... test_view.jsp
 
 ![view_page](https://user-images.githubusercontent.com/37740006/86908979-3bdf2d80-c139-11ea-93d8-d141e38c3ec7.png)
+
+
+
+# Employee Directory Project
+
+## Project Requirement
+
+1. List Employee
+
+2. Add new Employee
+
+3. Update Employee
+
+4. Delete Employee
+
+Employee Directory_ is a web application developed using **JSP and Servlets**. The goal of the application is to keep track of the employees and the application involves the basic **CRUD** operations, it also involves the **MVC Design pattern**. 
+
+## Tools and Technologies used
+
+1. JSP
+2. Servlets
+3. MVC Design Pattern
+4. MySQL Workbench
+5. Bootstrap 4
+6. Eclipse Oxygen
+7. Apache tomcat 8
+
+## Steps to install
+
+
+1.Clone the application
+
+
+
+
+2.Create a MySQL Database
+
+```sql
+CREATE DATABASE employeedirectory;
+```
+
+3.Create a table and insert values
+
+```sql
+create table tbl_employee(
+id int primary key not null auto_increment,
+name varchar(255) not null,
+dob varchar(255) not null,
+department varchar(255) not null
+);
+
+insert into tbl_employee(name, dob, department)values("Jhon", "12-12-1991", "Marketing");
+
+insert into tbl_employee(name, dob, department)values("Sara", "21-05-1992", "Testing");
+
+insert into tbl_employee(name, dob, department)values("Paul", "23-04-1988", "Development");
+
+insert into tbl_employee(name, dob, department)values("David", "18-03-1989", "Support");
+```
+
+4.Change the MySQL Username and Password as per your installation
+
++ open `src/in/bushansirgur/util/DBConnectionUtil.java` file.
++ change `USERNAME` and `PASSWORD` as per your installation.
+
+You can see the full post @ [Here](https://bushansirgur.in/creating-mvc-database-web-application-in-jsp-and-servlets-create-read-update-delete/)
+
+For More Awesome Projects Subscribe to  Youtube channel [B2 Tech](https://www.youtube.com/b2tech) 
+
+If you find any difficulty in installing the application then reach @ [Bushan Sirgur](http://BushanSirgur.in)
+
